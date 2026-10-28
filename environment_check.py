@@ -2,11 +2,14 @@ import gymnasium as gym
 
 env = gym.make("LunarLander-v3", render_mode="human")
 observation, info = env.reset(seed=42)
-print("Observation space:", env.observation_space)
-print("Action space:", env.action_space)
-input("Press Enter to close...")
-action = 2
-next_observation, reward, terminated, truncated, info = env.step(action)
-print(next_observation, reward, terminated, truncated, info)
-input("Press Enter to close...")
+observation, reward, terminated, truncated, info = env.step(0)
+print(f"Observation: {observation}, Reward: {reward}, Terminated: {terminated}, Truncated: {truncated}, Info: {info}")
+velocity1 = observation[3]
+observation, info = env.reset(seed=42)
+observation, reward, terminated, truncated, info = env.step(2)
+print(f"Observation: {observation}, Reward: {reward}, Terminated: {terminated}, Truncated: {truncated}, Info: {info}")
+velocity2 = observation[3]
+
+print(velocity2, velocity1)
+print(velocity2-velocity1)
 env.close()
