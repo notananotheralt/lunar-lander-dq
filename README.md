@@ -56,6 +56,7 @@ No external API or external dataset is required. Training data is produced throu
 
 - [Project design document](docs/lunar-lander-project-design.pdf)
 - [System diagram](docs/lunar-lander-system-diagram.png)
+- [Editable Lucidchart diagram](https://lucid.app/lucidchart/51f54fbf-3c17-40ac-a969-bcb5d8b3b98e/edit?invitationId=inv_f9e9bdfc-ebad-4b0b-afcc-840ebdc8b4b0)
 
 ## Reference
 
