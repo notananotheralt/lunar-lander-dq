@@ -1,8 +1,12 @@
 # LunarLander DQN
 
-## Project Goal
+## Problem Statement
 
-This project is a learning-focused replication and demonstration of the Deep Q-Network ideas from Mnih et al. (2015). The goal is to understand how a DQN learns a control policy for Gymnasium's LunarLander-v3 environment and compare it with a reproducible random-agent baseline.
+DQN is hard to understand from equations alone, so I want to see how it learns a control policy and whether it can improve over a random LunarLander agent.
+
+## Proposed Solution
+
+A Python demo that recreates the main DQN ideas from Mnih et al. (2015) for Gymnasium's LunarLander-v3, including a Q-network, experience replay, a target network, a training loop, and evaluation against my random baseline.
 
 ## Current Progress
 
@@ -16,20 +20,14 @@ This project is a learning-focused replication and demonstration of the Deep Q-N
 ## MVP Scope
 
 - Implement a PyTorch Q-network
-- Implement experience replay
-- Use epsilon-greedy action selection
-- Use separate policy and target networks
-- Build the DQN training loop
-- Save training data and model checkpoints
-- Evaluate the trained policy against the random baseline
+- Add replay memory, epsilon-greedy action selection, and a target network
+- Train and evaluate against the completed random baseline
 
 ## Future Plans
 
 - Plot reward and loss during training
-- Experiment with hyperparameters
-- Compare standard DQN with Double DQN
-- Create a polished video of the trained agent
-- Explore exporting the trained policy for inference
+- Experiment with DQN hyperparameters
+- Export and polish the trained-agent demo
 
 ## Tech Stack
 
